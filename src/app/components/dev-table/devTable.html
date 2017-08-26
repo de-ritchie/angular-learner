@@ -1,0 +1,9 @@
+<ul class="dev">
+    <li 
+    (click)= onSelect(dev) 
+    [class.selected]= 'selectedDev !== dev'
+    *ngFor='let dev of developers'>
+        <span class="spanbgnd">{{dev.name}}</span>
+        <span>{{dev.skills}}</span>
+    </li>
+</ul>
